@@ -8,9 +8,9 @@
 <body>
     <h1>
         <?php 
-        echo "Olá mundo! \u{1F30E}";
+        phpinfo();
         ?>
     </h1>
     <p>Me livrando da maldição</p>
 </body>
-</html>
+</html> 
