@@ -8,7 +8,7 @@
 <body>
 
         <?php 
-        
+            echo "Hoje é dia eheheh " . date("d/m/Y"); 
         ?>
 
 </body>
