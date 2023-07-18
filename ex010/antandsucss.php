@@ -14,12 +14,13 @@
     </header>
     <main>
         <?php
-      
-        echo "<center><p>O número gerado é: ". rand(1,100) . ", " . rand(1,100) . ", " .  rand(1,100) ."<p></center>";
+        $num_php = $_POST["numero"];
+        $num_doll = $_POST["numero"] / 4.82;
+        
+
+        echo "<center><p>Seus $num_php, equivalem a US$ $num_doll<p></center>";
         
         ?>
-
-       <a href="index.html"> <button>Voltar</button></a>
     </main>
 
 </body>
