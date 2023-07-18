@@ -1,13 +1,13 @@
 html {
     margin: 0;
     padding: 0;
-    width: 100%;
+    height: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    height: 100%;
     background-color: gray;
 }
 
@@ -60,10 +60,18 @@ header {
     margin: 15px 35%;
 }
 
-main {
+.OII {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.center {
     background-color: white;
     border-radius: 9px;
-
+    width: 350px;
+    margin: 50px 38%;
 }
+
+
+

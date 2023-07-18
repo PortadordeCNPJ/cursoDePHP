@@ -12,17 +12,25 @@
     <header>
         <h1>Resultado do processamento</h1>
     </header>
-    <main>
-        <?php
-        $num_php = $_POST["numero"];
-        $num_doll = $_POST["numero"] / 4.82;
-        
+    <div class="OII">
+        <div class="center">
+            <?php
 
-        echo "<center><p>Seus $num_php, equivalem a US$ $num_doll<p></center>";
-        
-        ?>
-    </main>
+            if ($_POST["numero"] == NULL) {
+                echo "<center><p> ERRO POR FAVOR DIGITE UM VALOR VALIDO";
+            } else {
+                $num_php = $_POST["numero"];
+                $num_doll = $_POST["numero"] / 4.82;
 
+                echo "<center><p>Seus $num_php, equivalem a US$" . number_format($num_doll, 2)
+                    . "<p></center>";
+            }
+
+            ?>
+
+        </div>
+        <a href="index.html"> <button class="btn-submit"> Voltar </button> </a>
+    </div>
 </body>
 
 </html>
