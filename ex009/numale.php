@@ -15,11 +15,13 @@
     <main>
         <?php
       
-        echo "<center><p>O número gerado é: ". rand(1,100) . ", " . rand(1,100) . ", " .  rand(1,100) ."<p></center>";
+        echo "<center><p>O número gerado é: ". mt_rand(1,100) . ", " . random_int(1,100) . ", " . mt_rand(1,100) ."<p></center>";
         
         ?>
 
         <a href="index.html"> <button>Voltar</button></a>
+
+        <button onclick="javascript:document.location.reload()">Rerar mais</button>
     </main>
 
 </body>

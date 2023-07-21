@@ -14,13 +14,14 @@
     </header>
     <main>
         <?php
-        $num_php = $_POST["numero"];
+        $num_php = $_POST["numero"] ?? 0;
         
         echo "<center><p>O número escolhido foi, $num_php<p></center>";
         echo "<center><p>O seu antecessor é , " . $num_php - 1 . "!<p></center>";
         echo "<center><p>O seu sucessor é, " . $num_php + 1 . "!<p></center>";
         
         ?>
+        <button onclick="javascript:window.location.href='inde.html'"></button>
     </main>
 
 </body>
